@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Red+Hat+Display:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+    padding: 2rem;
+    background-color: #252525;
+    color: #f2f2f2;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box h2 {
+    font-size: 2rem;
+}
+
+.box iframe {
+    margin-top: 2rem;
+}
+
+#conteudos {
+    margin-top: 2rem;
+}
+
+.lateral-bar {
+    display: flex;
+    flex-direction: column;
+}
+
+.lateral-bar h2 {
+    margin-bottom: 1rem;
+}
+
+.lateral-bar a, .bloco {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    border-radius: 100px;
+    border: 2px solid #2b84e3;
+    text-align: center;
+    padding: 6px;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.bloco {
+    border: 2px solid #f2f2f2;
+}
+
+.materia_02 {
+    border: 2px solid #ee3131 !important;
+}
+.materia_03 {
+    border: 2px solid #ee8631 !important;
+}
+.materia_04 {
+    border: 2px solid #3431ee !important;
+}
+.materia_05 {
+    border: 2px solid #eeaf31 !important;
+}
+.materia_06 {
+    border: 2px solid #720995 !important;
+}
+.materia_07 {
+    border: 2px solid #31eed8 !important;
+}
+.materia_08 {
+    border: 2px solid #1ba524 !important;
+}
+.materia_09 {
+    border: 2px solid #f14c4c !important;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        height: auto;
+        margin: 2rem 0;
+        flex-direction: column;
+    }
+
+    .box {
+        max-width: 100%;
+    }
+
+    #conteudos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #iframe {
+        max-width: 100%;
+        height: 260px;
+    }
+
+    .lateral-bar {
+        padding: 0.5rem;
+        margin-top: 2rem;
+    }
+}

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./stylesheet/style.css" />
+        <title>Design</title>
+    </head>
+    <body>
+        <div class="box">
+            <h2 id="materia">Português</h2>
+            <p id="conteudo">Preposições</p>
+            <iframe
+                id="iframe"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/vppN6868Ang"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+            ></iframe>
+            <div id="conteudos"></div>
+        </div>
+        <div class="lateral-bar">
+            <h2>Outras Matérias</h2>
+            <a onclick="changeTo(1)" class="materia_01">Português</a>
+            <a onclick="changeTo(2)" class="materia_02">Matemática</a>
+            <a onclick="changeTo(3)" class="materia_03">Geografia</a>
+            <a onclick="changeTo(4)" class="materia_04">Química</a>
+            <a onclick="changeTo(5)" class="materia_05">História</a>
+            <a onclick="changeTo(6)" class="materia_06">Física</a>
+            <a onclick="changeTo(7)" class="materia_07">Inglês</a>
+            <a onclick="changeTo(8)" class="materia_08">Artes</a>
+            <a onclick="changeTo(9)" class="materia_09">Ed. Física</a>
+        </div>
+
+        <script>
+            function changeTo(id) {
+                if (id === 1) {
+                    document.getElementById("materia").innerHTML = "Português";
+                    document.getElementById("conteudo").innerHTML =
+                        "Preposições";
+                    document.getElementById("iframe").src =
+                        "https://www.youtube.com/embed/vppN6868Ang";
+
+                    var meuObjeto = {
+                        propriedade1: {
+                            nome: "Preposições",
+                            video: "vppN6868Ang",
+                        },
+                        propriedade2: {
+                            nome: "Função de Linguagem",
+                            video: "J-ZV7mbXnp0",
+                        },
+                        propriedade3: {
+                            nome: "Trovadorismo, humanismo e classicismo",
+                            video: "VVdTsvGnmYM",
+                        },
+                    };
+
+                    criarTagsEstilizadas(meuObjeto);
+                } else if (id === 2) {
+                    document.getElementById("materia").innerHTML = "Matemática";
+                    document.getElementById("conteudo").innerHTML =
+                        "Função quadrática";
+                    document.getElementById("iframe").src =
+                        "https://www.youtube.com/embed/nTMbO-xM_qI";
+
+                    var meuObjeto = {
+                        propriedade1: { nome: "Função Quadrática", video: "nTMbO-xM_qI" },
+                        propriedade2: { nome: "Função Afim", video: "VD9vOer_s7I" },
+                        propriedade3: {
+                            nome: "Progressão Aritmética (PA)",
+                            video: "poyvpdAC4xI",
+                        },
+                    };
+
+                    criarTagsEstilizadas(meuObjeto);
+                } else if (id === 3) {
+                    document.getElementById("materia").innerHTML = "Geografia";
+                    document.getElementById("conteudo").innerHTML =
+                        "Cartografia";
+                    document.getElementById("iframe").src =
+                        "https://www.youtube.com/embed/8BwaEZ1pO-4";
+
+                    var meuObjeto = {
+                        propriedade1: { nome: "Cartografia", video: "8BwaEZ1pO-4" },
+                    };
+
+                    criarTagsEstilizadas(meuObjeto);
+                } else if (id === 4) {
+                    document.getElementById("materia").innerHTML = "Química";
+                    document.getElementById("conteudo").innerHTML =
+                        "Separação de Misturas";
+                    document.getElementById("iframe").src =
+                        "https://www.youtube.com/embed/0OZ-tu7QnVc";
+
+                    var meuObjeto = {
+                        propriedade1: { nome: "Separação de Misturas", video: "0OZ-tu7QnVc" },
+                        propriedade2: { nome: "Modelos Atômicos", video: "pXQyG1m8fPk" },
+                    };
+
+                    criarTagsEstilizadas(meuObjeto);
+                } else if (id === 5) {
+                    document.getElementById("materia").innerHTML = "História";
+                    document.getElementById("conteudo").innerHTML =
+                        "A origem dos seres humanos";
+                    document.getElementById("iframe").src =
+                        "https://www.youtube.com/embed/DPrJm6lOOGE";
+
+                    var meuObjeto = {
+                        propriedade1: { nome: "A origem dos seres humanos", video: "DPrJm6lOOGE" },
+                        propriedade2: { nome: "Historiografia", video: "aZrOcw7Ttq8" },
+                        propriedade3: {
+                            nome: "Introdução aos estudos históricos", video: "8DrtoagKZcE"
+                        },
+                    };
+
+                    criarTagsEstilizadas(meuObjeto);
+                } else if (id === 6) {
+                    document.getElementById("materia").innerHTML = "Física";
+                    document.getElementById("conteudo").innerHTML =
+                        "Lançamento oblíquo";
+                    document.getElementById("iframe").src =
+                        "https://www.youtube.com/embed/jLztp8jCUvI";
+
+                    var meuObjeto = {
+                        propriedade1: { nome: "Lançamento oblíquo", video: "jLztp8jCUvI" },
+                        propriedade2: { nome: "Lei de newton", video: "5AEZCsEAopY" },
+                    };
+
+                    criarTagsEstilizadas(meuObjeto);
+                } else if (id === 7) {
+                    document.getElementById("materia").innerHTML = "Inglês";
+                    document.getElementById("conteudo").innerHTML = "Horas";
+                    document.getElementById("iframe").src =
+                        "https://www.youtube.com/embed/6_mTCM0_2e8";
+
+                    var meuObjeto = {
+                        propriedade1: { nome: "Horas", video: "6_mTCM0_2e8" },
+                        propriedade2: { nome: "Dias da semana", video: "bLdFvCJNtOk" },
+                    };
+
+                    criarTagsEstilizadas(meuObjeto);
+                } else if (id === 8) {
+                    document.getElementById("materia").innerHTML = "Artes";
+                    document.getElementById("conteudo").innerHTML =
+                        "Artes visuais";
+                    document.getElementById("iframe").src =
+                        "https://www.youtube.com/embed/FGydGyUqGvk";
+
+                    var meuObjeto = {
+                        propriedade1: { nome: "Artes visuais", video: "FGydGyUqGvk" },
+                    };
+
+                    criarTagsEstilizadas(meuObjeto);
+                } else if (id === 9) {
+                    document.getElementById("materia").innerHTML = "Ed. Física";
+                    document.getElementById("conteudo").innerHTML = "Lutas";
+                    document.getElementById("iframe").src =
+                        "https://www.youtube.com/embed/yD8lLRa4Oug";
+
+                    var meuObjeto = {
+                        propriedade1: { nome: "Lutas", video: "yD8lLRa4Oug" },
+                    };
+
+                    criarTagsEstilizadas(meuObjeto);
+                }
+            }
+
+            function criarTagsEstilizadas(objeto) {
+                var conteudosDiv = document.getElementById("conteudos");
+                conteudosDiv.innerHTML = "";
+                var quantidadeElementos = Object.keys(objeto).length;
+
+                for (var i = 0; i < quantidadeElementos; i++) {
+                    (function (i) {
+                        var tag = document.createElement("span");
+                        tag.innerText = objeto["propriedade" + (i + 1)].nome;
+                        tag.classList.add("bloco");
+                        tag.onclick = function () {
+                            document.getElementById("conteudo").innerHTML =
+                                objeto["propriedade" + (i + 1)].nome;
+                            document.getElementById("iframe").src =
+                                "https://www.youtube.com/embed/" +
+                                objeto["propriedade" + (i + 1)].video;
+                        };
+
+                        conteudosDiv.appendChild(tag);
+                    })(i);
+                }
+            }
+
+            var meuObjeto = {
+                propriedade1: { nome: "Preposições", video: "vppN6868Ang" },
+                propriedade2: {
+                    nome: "Função de Linguagem",
+                    video: "J-ZV7mbXnp0",
+                },
+                propriedade3: {
+                    nome: "Trovadorismo, humanismo e classicismo",
+                    video: "VVdTsvGnmYM",
+                },
+            };
+
+            criarTagsEstilizadas(meuObjeto);
+        </script>
+    </body>
+</html>
